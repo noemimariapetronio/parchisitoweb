@@ -1,0 +1,362 @@
+html, body {
+    height: 100%; /* Assicura che il body e l'html occupino il 100% dell'altezza */
+    margin: 0; /* Rimuove il margine predefinito */
+}
+
+body { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    background: #C3BEBE; 
+    margin: 0; /* Rimuove il margine del body */
+    padding: 0; /* Rimuove il padding del body */
+    display: flex; /* Utilizza Flexbox per gestire il layout del body */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    min-height: 100vh; /* Imposta l'altezza minima del body a 100% della viewport */
+}
+
+.main-content {
+    flex: 1; /* Occupa tutto lo spazio disponibile */
+}
+
+h1 {
+    font-size: 40px; color: #571919;
+}
+
+/*NAVIGAZIONE*/
+nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #571919; 
+    color: white; 
+    padding: 20px; 
+}
+
+nav .logo { 
+    font-size: 1.5em; 
+}
+
+nav a { 
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none; 
+}
+
+nav a:hover { 
+    text-decoration: underline; 
+}
+
+/*PARCHI SECTION 1 e 2*/
+section a {
+    color: white; 
+    margin: 0 15px; 
+    text-decoration: none; 
+} 
+
+.section1, .section-3 { 
+    background: #C3BEBE; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.section1{
+    background: #C3BEBE; 
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.section5{
+    background: #C3BEBE; 
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.image-container5 { width: 100px; 
+    height: 100px; 
+    margin-top: 245px; /* Abbassa l'immagine */
+    justify-content: space-between;
+    position: left;}
+    
+
+    .text-container5{
+        width: 550px; /* Aumenta la larghezza del contenitore */
+        height: 280px; 
+        margin-right: 20px; 
+        margin-top: 200px; /* Solleva ulteriormente il testo */
+        letter-spacing: 1px; /* Aggiunge spazio tra le lettere */
+        font-weight: 200; /* Rende il testo più sottile */
+        position: right;
+    }
+
+.section8{ background: #C3BEBE; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    margin: 20px 0;
+margin-top: 250px }
+.section8 img{position: right; max-width: 468px;justify-content: space-between;}
+
+.text-container {
+    width: 550px; /* Aumenta la larghezza del contenitore */
+    height: 280px; 
+    margin-right: 20px; 
+    margin-top: -240px; /* Solleva ulteriormente il testo */
+    letter-spacing: 1px; /* Aggiunge spazio tra le lettere */
+    font-weight: 200; /* Rende il testo più sottile */
+    
+}
+.image-container7{
+    width: 280px; 
+    height: 280px; 
+    margin-top: 200px; /* Abbassa l'immagine */
+    justify-content: space-between;
+    position: right
+}
+.image-container {
+    width: 468px; 
+    height: 468px; 
+    margin-top: 100px; /* Abbassa l'immagine */
+    justify-content: space-between;
+    position: right;
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+.section-66{ margin-top: 200px;}
+.section-2 {
+    padding: 20px; 
+    margin: 20px auto; /* Centra la sezione orizzontalmente */
+    background: #8F6464; 
+    display: flex; /* Utilizza Flexbox per la sezione */
+    justify-content: center; /* Centra le card orizzontalmente */
+    margin-top: 70px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card-container33{display: grid; /* Utilizza il layout a griglia */
+    grid-template-columns: repeat(2, 1fr); /* 3 colonne di uguale larghezza */
+    gap: 20px; /* Spaziatura uniforme tra le card */
+    max-width: 1200px; /* Limita la larghezza massima del contenitore delle card */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    padding: 0 20px; /* Padding laterale per mantenere distanza dai bordi */
+    margin: 45.8px; /* Sposta l'intero contenitore delle card verso sinistra */
+    }
+
+.card-container {
+    display: grid; /* Utilizza il layout a griglia */
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne di uguale larghezza */
+    gap: 20px; /* Spaziatura uniforme tra le card */
+    max-width: 1200px; /* Limita la larghezza massima del contenitore delle card */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    padding: 0 20px; /* Padding laterale per mantenere distanza dai bordi */
+    margin: 45.8px; /* Sposta l'intero contenitore delle card verso sinistra */
+  
+}
+.card-container2{
+    display: grid; /* Utilizza il layout a griglia */
+    grid-template-columns: repeat(4, 1fr); /* 3 colonne di uguale larghezza */
+    gap: 10px; /* Spaziatura uniforme tra le card */
+    max-width: 1200px; /* Limita la larghezza massima del contenitore delle card */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    padding: 0 20px; /* Padding laterale per mantenere distanza dai bordi */
+    margin: 45.8px; /* Sposta l'intero contenitore delle card verso sinistra */
+}
+.card2{
+    display: flex; /* Utilizza Flexbox per gestire il layout della card */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    border-radius: 8px; 
+    overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
+    width: 280px; /* Larghezza fissa per la card */
+    height: 380px; /* Altezza totale per la card */
+}
+.card {
+    display: flex; /* Utilizza Flexbox per gestire il layout della card */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    border-radius: 8px; 
+    overflow: hidden; /* Nasconde il contenuto che esce dai bordi */
+    width: 304px; /* Larghezza fissa per la card */
+    height: 404px; /* Altezza totale per la card */
+}
+
+.card2 img{ width: 100%; /* Larghezza dell'immagine al 100% della card */
+    height: 308px; /* Altezza fissa per l'immagine */
+    object-fit: cover; /* Riempi l'area senza distorcere l'immagine */
+
+}
+.card2 .text-container{ width: 304px; /* Larghezza fissa per la descrizione */
+    height: 98px; /* Altezza fissa per la descrizione */
+    display: flex; /* Utilizza flexbox per gestire il layout del testo */
+    flex-direction: column; /* Dispone il testo in colonna */
+    justify-content: flex-start; /* Allinea il testo in alto */
+    padding: 0; /* Rimuove il padding per attaccare il testo all'immagine */
+    background: rgba(255, 255, 255, 0.7); /* Sfondo leggermente trasparente per il testo */
+    border-radius: 0 0 8px 8px; /* Arrotonda solo il fondo della sezione del testo */
+    overflow: hidden; /* Nasconde il testo in eccesso */
+
+}
+.card2 h4, .card2 p{
+    margin: 0; /* Rimuove il margine per il titolo e la descrizione */
+    overflow: hidden; /* Nasconde il testo che esce dai bordi */
+    text-overflow: ellipsis; /* Aggiunge i puntini di sospensione per il testo troppo lungo */
+}
+.card img {
+    width: 100%; /* Larghezza dell'immagine al 100% della card */
+    height: 304px; /* Altezza fissa per l'immagine */
+    object-fit: cover; /* Riempi l'area senza distorcere l'immagine */
+}
+
+.card .text-container {
+    width: 304px; /* Larghezza fissa per la descrizione */
+    height: 91px; /* Altezza fissa per la descrizione */
+    display: flex; /* Utilizza flexbox per gestire il layout del testo */
+    flex-direction: column; /* Dispone il testo in colonna */
+    justify-content: flex-start; /* Allinea il testo in alto */
+    padding: 0; /* Rimuove il padding per attaccare il testo all'immagine */
+    background: rgba(255, 255, 255, 0.7); /* Sfondo leggermente trasparente per il testo */
+    border-radius: 0 0 8px 8px; /* Arrotonda solo il fondo della sezione del testo */
+    overflow: hidden; /* Nasconde il testo in eccesso */
+}
+
+.card h2, .card p {
+    margin: 0; /* Rimuove il margine per il titolo e la descrizione */
+    overflow: hidden; /* Nasconde il testo che esce dai bordi */
+    text-overflow: ellipsis; /* Aggiunge i puntini di sospensione per il testo troppo lungo */
+}
+
+.card h2 {
+    color: #571919; /* Colore del testo */
+}
+
+.card p {
+    font-size: 14px; /* Dimensione del testo per la descrizione */
+}
+
+.description2 {
+    background: #571919; /* Colore di sfondo per la descrizione */
+    color: white; /* Colore del testo nella descrizione */
+    padding: 15px; /* Padding interno per la descrizione */
+    border-radius: 4px; /* Angoli arrotondati per la descrizione */
+    margin-top: 5px; /* Margine sopra la descrizione */
+    align-items: center;
+}
+.description {
+    background: #571919; /* Colore di sfondo per la descrizione */
+    color: white; /* Colore del testo nella descrizione */
+    padding: 10px; /* Padding interno per la descrizione */
+    border-radius: 4px; /* Angoli arrotondati per la descrizione */
+    margin-top: 10px; /* Margine sopra la descrizione */
+    align-items: center;
+}
+
+/*FOOTER*/
+footer {
+    background: #571919; /* Colore di sfondo per il footer */
+    color: white; /* Colore del testo nel footer */
+    text-align: center; 
+    padding: 10px 20px; 
+    display: flex; /* Utilizza Flexbox per il footer */
+    justify-content: space-between; /* Allinea il logo a sinistra e i link a destra */
+    align-items: center; /* Allinea verticalmente gli elementi */
+    width: 100%; /* Occupa tutta la larghezza della pagina */
+    max-width: 1200px; /* Limita la larghezza massima del footer */
+    margin: 0 auto; /* Centra il footer orizzontalmente */
+}
+
+footer .logo {
+    font-size: 1.5em; /* Dimensione del logo nel footer */
+}
+
+footer .nav-links {
+    margin-left: auto; /* Sposta i link a destra */
+}
+
+footer .nav-links a {
+    color: white; 
+    margin: 0 10px; 
+    text-decoration: none; 
+}
+
+footer .nav-links a:hover {
+    text-decoration: underline; /* Sottolinea il link al passaggio del mouse */
+}
+
+main { 
+    padding: 20px; 
+}
+
+h3 {
+    color: #571919; /* Colore del titolo h3 */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: #8F6464;
+  }
+  
+  .image-gallery img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+  }
+
+.cardine{width: 40%; justify-content: space-around;}
+.imghero{ width: 500px;
+    height: auto;
+    display: flex;}
+    .container9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      
+      .container9 .text-container9 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 45px auto; /* Centra orizzontalmente */
+        padding: 0 20px; /* Aggiunge margine dai bordi */
+        text-align: left; /* Allinea il testo a sinistra */
+      }
+      
+      .container9 .text-container9 h2 {
+        margin-top: 0;
+      }
+      
+      .container9 .text-container9 img {
+        width: 1200px;
+        height: 375px;
+        object-fit: cover;
+        margin: 35px auto; /* Centra orizzontalmente */
+      }
+      
+      .container9 .text-container9 p {
+        line-height: 1.5;
+      }
+      
+      
+      @media (max-width: 768px) {
+        .image-container, .image-container5, .image-container7 {
+            flex-direction: column; /* Mantiene la disposizione in colonna */
+            align-items: center; /* Centra gli elementi */
+        }
+    
+        .text-container, .text-container5 {
+            width: 90%; /* Ridotto per schermi piccoli */
+            max-width: none; /* Rimuove il limite massimo per il testo */
+            margin-top: 10px; /* Spazio sopra il testo */
+            padding: 15px; /* Aumenta il padding per una migliore leggibilità */
+        }
+    
+        .image-container img {
+            margin-bottom: 15px; /* Maggiore spazio sotto l'immagine */
+        }
+    }
